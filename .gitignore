@@ -1,0 +1,14 @@
+# Elixir
+
+/_build
+/deps
+erl_crash.dump
+*.ez
+
+# Node
+
+node_modules
+
+# App
+
+/priv/static/dist
