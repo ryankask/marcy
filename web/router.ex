@@ -13,7 +13,7 @@ defmodule Marcy.Router do
   end
 
   scope "/", Marcy do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :browser
 
     get "/", PageController, :index
   end
@@ -21,6 +21,6 @@ defmodule Marcy.Router do
   scope "/api", Marcy do
     pipe_through :api
 
-    resources "/users", UserController
+    post "/users/auth", UserController, :auth
   end
 end
