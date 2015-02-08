@@ -11,6 +11,9 @@ config :marcy, Marcy.Endpoint,
   secret_key_base: "oifTeiPxuEfyeZAvt/W998TfBF0x/PQTm1ms/t8F9f7f9Xo8UMYyflsXchCuRBnE",
   debug_errors: false
 
+config :marcy, Marcy.Repo,
+  url: {:system, "DATABASE_URL"}
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
