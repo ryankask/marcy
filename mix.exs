@@ -19,7 +19,7 @@ defmodule Marcy.Mixfile do
     [{:phoenix, "~> 0.8.0"},
      {:cowboy, "~> 1.0"},
      {:postgrex, ">= 0.0.0"},
-     {:ecto, "~> 0.7"},
+     {:ecto, github: "elixir-lang/ecto"},
      {:comeonin, "~> 0.2"}]
   end
 end
