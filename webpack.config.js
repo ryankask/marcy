@@ -20,8 +20,8 @@ module.exports = {
         loader: 'style!css!sass'
       },
       {
-        test: /\.jsx$/,
-        loader: 'jsx?harmony'
+        test: /\.jsx?$/,
+        loader: 'babel?experimental&optional=selfContained'
       }
     ]
   },
